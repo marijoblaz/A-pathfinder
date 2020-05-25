@@ -235,7 +235,12 @@ void GameState::initButtons()
     this->infoKeysText.setCharacterSize(25);
     this->infoKeysText.setPosition(sf::Vector2f(50, 630));
     this->infoKeysText.setString("Press Enter to start or use on-screen buttons\nUse mouse to interact with the map");
-
+    
+    this->infoNaslovText.setFont(this->font);
+    this->infoNaslovText.setFillColor(sf::Color(30,30,30));
+    this->infoNaslovText.setCharacterSize(30);
+    this->infoNaslovText.setPosition(sf::Vector2f(50, 20));
+    this->infoNaslovText.setString("A* Search Algorithm");
 
 
     //----------------------------------
@@ -614,6 +619,7 @@ void GameState::render(sf::RenderTarget& mTarget)
 
     mTarget.draw(this->runShape);
     mTarget.draw(this->runText);
+    mTarget.draw(this->infoNaslovText);
 
     mTarget.draw(this->infoShape);
     mTarget.draw(this->infoXText);

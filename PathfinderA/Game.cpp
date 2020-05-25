@@ -29,7 +29,7 @@ void Game::processEvents()
     }
 }
 
-Game::Game() : mWindow(sf::VideoMode(1280, 720, 32), "SFML Window", sf::Style::Close)
+Game::Game() : mWindow(sf::VideoMode(1280, 720, 32), "APathMarijo", sf::Style::Close)
 {
     this->gameState = new GameState(&this->mWindow);
     this->mWindow.setFramerateLimit(60);

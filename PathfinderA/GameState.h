@@ -42,6 +42,7 @@ private:
 	sf::RectangleShape squaresShape[40][20];
 
 	//Info
+	sf::Text infoNaslovText;
 	sf::RectangleShape infoShape;
 	sf::Text infoXText;
 	sf::Text infoYText;
