@@ -6,7 +6,6 @@
 #include <ctime>
 #include <string>
 #include <queue>
-#include <SFML/Audio.hpp>
 #include <SFML/Graphics.hpp>
 
 class Node
